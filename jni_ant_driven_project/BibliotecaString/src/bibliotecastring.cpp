@@ -2,6 +2,7 @@
  * bibliotecastring.c Archivo de implementacion de la biblioteca
  * BibliotecaString
  */
+#include <string.h>
 #include "u4_jni00_EjemploString.h"
 
 JNIEXPORT jstring JNICALL Java_u4_jni00_EjemploString_replaceString

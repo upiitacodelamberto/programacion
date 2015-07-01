@@ -141,7 +141,7 @@ $ mkdir -p BibliotecaString/include/
 $ cd Build/classes/
 $ javah -d ../../BibliotecaString/include/ u4.jni00.EjemploString
 \end{verbatim}
-Despues de ejecutar estos comandos debemos tener
+Después de ejecutar estos comandos debemos tener
 \begin{verbatim}
 .
 |-- BibliotecaString
