@@ -9,7 +9,7 @@ JNIEXPORT jstring JNICALL Java_u4_jni00_EjemploString_replaceString
   (JNIEnv *env, jobject obj, 
   jstring _srcString, jstring _strToReplace, jstring _replString){
   const char *searchStr, *findStr, *replStr, *found;
-  jstring newStr=NULL;
+  jstring newString=NULL;
   int index;
 
   searchStr=env->GetStringUTFChars(_srcString, NULL);

@@ -136,34 +136,16 @@ esto:
 Al ejecutar javah debemos especificar el 
 nombre de la clase (no el nombre del archivo) como primer 
 parámetro.
-\begin{verbatim}
-$ mkdir -p BibliotecaString/include/
-$ cd Build/classes/
-$ javah -d ../../BibliotecaString/include/ u4.jni00.EjemploString
-\end{verbatim}
-Después de ejecutar estos comandos debemos tener
-\begin{verbatim}
-.
-|-- BibliotecaString
-|   `-- include
-|       `-- u4_jni00_EjemploString.h
-|-- Build
-|   `-- classes
-|       `-- u4
-|           `-- jni00
-|               `-- EjemploString.class
-|-- build.xml
-|-- newpkgroot
-    `-- u4
-        `-- jni00
-            `-- EjemploString.java
-\end{verbatim}
-\noindent Ahora mostramos una posible implementación de la biblioteca 
-BibliotecaString: (libBibliotecaString.so en linux o 
-BibliotecaString.dll en Windows).
+Despues necesitamos crear la biblioteca BibliotecaString: 
+Si trabajamos en linux deberemos crear una biblioteca 
+dinámica que deberá llamarse libBibliotecaString.so, y si 
+trabajamos en Windows deberemos crear una biblioteca de 
+enlace dinámico (DLL) que debera llamarse BibliotecaString.dll
+\par
+\noindent En linux podemos usar la herramienta make con el
+siguiente archivo Makefile:
 \begin{verbatim}
  
 \end{verbatim}
-
 
 \end{document}

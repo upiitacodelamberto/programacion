@@ -136,26 +136,4 @@ esto:
 Al ejecutar javah debemos especificar el 
 nombre de la clase (no el nombre del archivo) como primer 
 parámetro.
-\begin{verbatim}
-$ mkdir -p BibliotecaString/include/
-$ cd Build/classes/
-$ javah -d ../../BibliotecaString/include/ u4.jni00.EjemploString
-\end{verbatim}
-Despues de ejecutar estos comandos debemos tener
-\begin{verbatim}
-.
-|-- BibliotecaString
-|   `-- include
-|       `-- u4_jni00_EjemploString.h
-|-- Build
-|   `-- classes
-|       `-- u4
-|           `-- jni00
-|               `-- EjemploString.class
-|-- build.xml
-|-- newpkgroot
-    `-- u4
-        `-- jni00
-            `-- EjemploString.java
-\end{verbatim}
 \end{document}
