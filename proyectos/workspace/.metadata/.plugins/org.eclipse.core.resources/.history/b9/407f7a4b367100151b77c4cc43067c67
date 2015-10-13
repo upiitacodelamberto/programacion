@@ -1,0 +1,5 @@
+package gestiondboletos;
+
+public class Boleto {
+
+}

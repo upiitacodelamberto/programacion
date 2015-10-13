@@ -1,0 +1,7 @@
+package gestiondboletos;
+
+import java.util.Vector;
+
+public class Bol {
+	public Vector<Boleto> VBoleto;
+}
