@@ -1,0 +1,25 @@
+package gestiondboletos;
+
+
+
+public class Boleto extends Bol{
+	int numdbol; //numero de boleto
+	static int consecutivo;//Variable de clase (cuantos boletos 
+	                       //se han instanciado)
+	static{//Bloque de inicializacion static
+		consecutivo=0;
+	}
+	public Boleto(){//Constructor por defecto
+		consecutivo++;
+	}
+	//public Boleto(String e){
+	//	super(e);
+	//	consecutivo++;
+	//}
+	public int getNumdbol(){
+		return numdbol;
+	}
+	public int getConsecutivo(){
+		return consecutivo;
+	}
+}
